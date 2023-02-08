@@ -457,7 +457,7 @@ img {
     align-items: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     .hero-title {
         width: 318px;
     }
@@ -636,8 +636,8 @@ img {
 
 .mobile-soc {
     display: flex;
-    justify-content: space-between;
-}
+   gap: 56px;
+}   
 
 .mobile-soc .social-icon .link {
     display: block;
@@ -881,9 +881,12 @@ img {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:1199px) {
     .subtitle {
+        font-size: 36px;
         text-align: start;
+        margin-top: 0;
+        line-height: 1.1;
     }
     
 }
@@ -1089,7 +1092,7 @@ img {
  
 .team-card {
     background-color:var(--primary-white-color);
-    margin-left: 24px;
+    /* margin-left: 24px; */
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -1185,13 +1188,13 @@ img {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
 }
 
 @media screen and (max-width: 767px) {
     .post-text {
         line-height: 1.5;
-        margin-bottom: 12px;
+        /* margin-bottom: 12px; */
     }
 }
 
@@ -1274,8 +1277,7 @@ img {
         margin-bottom: 0;
     }
 }
- 
-    
+  
 
 .customers-item {
     height: 88px;
@@ -1285,12 +1287,6 @@ img {
     .customers-item {
         width: 168px;
         height: 88px;
-        margin-right: 24px;
-        border: 1px solid var(--subtle-text-color);
-        border-radius: 4px;
-
-        transition-property: border;
-        transition: border 250ms var(--timing-function);
     }
 }
 
@@ -1319,6 +1315,13 @@ img {
     transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
  } 
 
+ @media screen and (max-width: 768px) {
+    .customers-link {
+        width: 190px;
+    }
+    
+ }
+
 .customers-link:hover,
 .customers-link:focus,
 .customers-link:active {
@@ -1345,7 +1348,6 @@ footer {
     .footer-box {
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
 }
 }
 
@@ -1397,6 +1399,14 @@ footer {
     margin-top: 0;
     color: var(--primary-white-color);
 }
+
+@media screen and (max-width:767px) {
+    .footer-title {
+        text-align: center;
+    }
+    
+}
+
 
 .footer-logo {
     margin-right: 120px;
@@ -1495,6 +1505,12 @@ footer {
     transition: border-color  250ms var(--timing-function);
 }
 
+@media screen and (max-width:767px) {
+    .footer-field {
+        width: 396px;
+    }
+    
+}
 
 .footer-submit {
     display: flex;
